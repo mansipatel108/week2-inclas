@@ -4,13 +4,13 @@
 
 <html lang="en">
 <head runat="server">
-    
+
     <title></title>
     <!-- Css section-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
-    <link href="css/font-awesome.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -32,19 +32,12 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                                <li><a href="Products.aspx"><i class="fa fa-th fa-lg"></i>Prodcts</a></li>
-                                 <li><a href="Services.aspx"><i class="fa fa-gear fa-lg"></i>Services</a></li>
-                                 <li><a href="About.aspx"><i class="fa fa-info fa-lg"></i>About</a></li>
-                                 <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i>Contact</a></li>
-                            </ul>
-                        </li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li><a href="Products.aspx"><i class="fa fa-th fa-lg"></i> Prodcts</a></li>
+                        <li><a href="Services.aspx"><i class="fa fa-gear fa-lg"></i> Services</a></li>
+                        <li><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About</a></li>
+                        <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -52,11 +45,10 @@
             <!-- /.container-fluid -->
         </nav>
 
-    <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
     <!-- Scripts -->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
